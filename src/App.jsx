@@ -15,14 +15,14 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/filmes" element={<Filmes />} />
-        <Route path="/formulario" element={<Form />} /> 
+        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/formulario" element={<Form />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/" element={<Home />} />
         <Route path='/sobre' element={<Sobre />} />
         <Route path="*" element={<Erro />} />
       </Routes>
-      <Footer />
+        <Footer />
     </BrowserRouter>
   );
 }
