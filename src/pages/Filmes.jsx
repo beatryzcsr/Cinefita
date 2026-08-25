@@ -1,21 +1,4 @@
-import img from '/public/Ana.png'
-import img2 from '/public/Rafael.png'
-import img3 from '/public/Carolina.png'
-import img4 from '/public/Beatriz.png'
-import img5 from '/public/Felipe.png'
-import img6 from '/public/Gabriel.png'
-import img7 from '/public/Lucas.png'
-import img8 from '/public/Mariana.png'
-import img10 from '/public/verde1.png'
-import img11 from '/public/verde2.png'
-import img12 from '/public/verde3.png'
-import img13 from '/public/verde4.png'
-import img14 from '/public/verde5.png'
-import img15 from '/public/verde6.png'
-import img16 from '/public/verde7.png'
-import img17 from '/public/verde8.png'
-import img18 from '/public/verde9.png'
-import img19 from '/public/verde10.png'
+import imagem from '/assets/fundofita.png'
 import { SiAnimalplanet } from "react-icons/si";
 import { AiFillMedicineBox } from "react-icons/ai";
 
@@ -497,7 +480,7 @@ const warner_filmesr = [
 
 function Filmes() {
   return (
-    <section id="home" className="relative z-10 min-h-screen w-full overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${imagem})` }}>
+    <section>
 
     <div className="py-20 bg-emerald-100 m-20 rounded-2xl">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
