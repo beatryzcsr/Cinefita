@@ -1,42 +1,85 @@
-import imagem from '/assets/fundofita.png'
-import { SiAnimalplanet } from "react-icons/si";
+import fundoFita from '../assets/fundofita.png'
+import { GoStarFill } from "react-icons/go";
 import { AiFillMedicineBox } from "react-icons/ai";
+import { SiAnimalplanet } from "react-icons/si";
 
+// ==========================================================
 // DISNEY
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const disney_filmesp = [
   {
     nome: 'O Rei Leão',
-    sinopse: 'Simba precisa assumir seu lugar como rei após enfrentar uma grande perda.',
+    sinopse: 'Simba precisa enfrentar desafios para assumir o lugar de seu pai como rei.',
     tag: 'Animação',
     diretor: 'Roger Allers e Rob Minkoff',
     atores_principais: 'Matthew Broderick, Jeremy Irons e James Earl Jones',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Frozen',
-    sinopse: 'Anna parte em uma jornada para encontrar sua irmã Elsa e salvar seu reino.',
-    tag: 'Fantasia',
+    sinopse: 'Anna parte em uma aventura para encontrar Elsa e salvar o reino de Arendelle.',
+    tag: 'Animação',
     diretor: 'Chris Buck e Jennifer Lee',
     atores_principais: 'Kristen Bell, Idina Menzel e Josh Gad',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Aladdin',
-    sinopse: 'Um jovem encontra uma lâmpada mágica e ganha a chance de mudar sua vida.',
+    sinopse: 'Um jovem encontra uma lâmpada mágica e recebe a ajuda de um poderoso gênio.',
     tag: 'Fantasia',
     diretor: 'Ron Clements e John Musker',
     atores_principais: 'Scott Weinger, Robin Williams e Linda Larkin',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'A Bela e a Fera',
-    sinopse: 'Uma jovem encontra uma fera amaldiçoada e descobre o verdadeiro significado do amor.',
+    sinopse: 'Belle conhece uma criatura amaldiçoada e descobre que a aparência não define alguém.',
     tag: 'Romance',
     diretor: 'Gary Trousdale e Kirk Wise',
     atores_principais: 'Paige O’Hara, Robby Benson e Jerry Orbach',
-    image: ''
+    image: fundoFita
+  },
+  {
+    nome: 'Mulan',
+    sinopse: 'Mulan assume o lugar de seu pai no exército para proteger sua família.',
+    tag: 'Aventura',
+    diretor: 'Tony Bancroft e Barry Cook',
+    atores_principais: 'Ming-Na Wen, Eddie Murphy e BD Wong',
+    image: fundoFita
+  },
+  {
+    nome: 'Hércules',
+    sinopse: 'Um jovem semideus precisa provar seu valor para descobrir seu verdadeiro lugar.',
+    tag: 'Fantasia',
+    diretor: 'Ron Clements e John Musker',
+    atores_principais: 'Tate Donovan, Danny DeVito e James Woods',
+    image: fundoFita
+  },
+  {
+    nome: 'Tarzan',
+    sinopse: 'Um homem criado por gorilas precisa descobrir suas origens e seu verdadeiro mundo.',
+    tag: 'Aventura',
+    diretor: 'Kevin Lima e Chris Buck',
+    atores_principais: 'Tony Goldwyn, Minnie Driver e Brian Blessed',
+    image: fundoFita
+  },
+  {
+    nome: 'Enrolados',
+    sinopse: 'Rapunzel deixa sua torre pela primeira vez e embarca em uma grande aventura.',
+    tag: 'Animação',
+    diretor: 'Nathan Greno e Byron Howard',
+    atores_principais: 'Mandy Moore, Zachary Levi e Donna Murphy',
+    image: fundoFita
+  },
+  {
+    nome: 'Piratas do Caribe',
+    sinopse: 'Um pirata embarca em uma aventura envolvendo navios, maldições e tesouros.',
+    tag: 'Aventura',
+    diretor: 'Gore Verbinski',
+    atores_principais: 'Johnny Depp, Orlando Bloom e Keira Knightley',
+    image: fundoFita
   }
 ];
 
@@ -48,7 +91,7 @@ const disney_filmesr = [
     tag: 'Animação',
     diretor: 'David Derrick Jr.',
     atores_principais: 'Auli‘i Cravalho, Dwayne Johnson e Hualalai Chung',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Mufasa: O Rei Leão',
@@ -56,7 +99,7 @@ const disney_filmesr = [
     tag: 'Aventura',
     diretor: 'Barry Jenkins',
     atores_principais: 'Aaron Pierre, Kelvin Harrison Jr. e Beyoncé',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Lilo & Stitch',
@@ -64,14 +107,16 @@ const disney_filmesr = [
     tag: 'Fantasia',
     diretor: 'Dean Fleischer Camp',
     atores_principais: 'Maia Kealoha, Sydney Agudong e Chris Sanders',
-    image: ''
-  }
+    image: fundoFita
+  },
 ];
 
 
+// ==========================================================
 // PIXAR
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const pixar_filmesp = [
   {
     nome: 'Toy Story',
@@ -79,7 +124,7 @@ const pixar_filmesp = [
     tag: 'Animação',
     diretor: 'John Lasseter',
     atores_principais: 'Tom Hanks, Tim Allen e Don Rickles',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Procurando Nemo',
@@ -87,7 +132,7 @@ const pixar_filmesp = [
     tag: 'Aventura',
     diretor: 'Andrew Stanton',
     atores_principais: 'Albert Brooks, Ellen DeGeneres e Alexander Gould',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Os Incríveis',
@@ -95,7 +140,7 @@ const pixar_filmesp = [
     tag: 'Super-herói',
     diretor: 'Brad Bird',
     atores_principais: 'Craig T. Nelson, Holly Hunter e Samuel L. Jackson',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Up: Altas Aventuras',
@@ -103,7 +148,47 @@ const pixar_filmesp = [
     tag: 'Aventura',
     diretor: 'Pete Docter',
     atores_principais: 'Ed Asner, Jordan Nagai e Christopher Plummer',
-    image: ''
+    image: fundoFita
+  },
+  {
+    nome: 'Carros',
+    sinopse: 'Um jovem carro de corrida aprende importantes lições após ficar preso em uma cidade.',
+    tag: 'Animação',
+    diretor: 'John Lasseter',
+    atores_principais: 'Owen Wilson, Paul Newman e Bonnie Hunt',
+    image: fundoFita
+  },
+  {
+    nome: 'Ratatouille',
+    sinopse: 'Um rato apaixonado por culinária sonha em se tornar um grande chef.',
+    tag: 'Comédia',
+    diretor: 'Brad Bird',
+    atores_principais: 'Patton Oswalt, Ian Holm e Lou Romano',
+    image: fundoFita
+  },
+  {
+    nome: 'Wall-E',
+    sinopse: 'Um pequeno robô encontra uma nova esperança para a humanidade.',
+    tag: 'Ficção',
+    diretor: 'Andrew Stanton',
+    atores_principais: 'Ben Burtt, Elissa Knight e Jeff Garlin',
+    image: fundoFita
+  },
+  {
+    nome: 'Monstros S.A.',
+    sinopse: 'Dois monstros precisam proteger uma criança que entrou acidentalmente em seu mundo.',
+    tag: 'Animação',
+    diretor: 'Pete Docter',
+    atores_principais: 'John Goodman, Billy Crystal e Mary Gibbs',
+    image: fundoFita
+  },
+  {
+    nome: 'Viva: A Vida é uma Festa',
+    sinopse: 'Um garoto viaja ao mundo dos mortos para descobrir a história de sua família.',
+    tag: 'Fantasia',
+    diretor: 'Lee Unkrich',
+    atores_principais: 'Anthony Gonzalez, Gael García Bernal e Benjamin Bratt',
+    image: fundoFita
   }
 ];
 
@@ -115,7 +200,7 @@ const pixar_filmesr = [
     tag: 'Animação',
     diretor: 'Kelsey Mann',
     atores_principais: 'Amy Poehler, Maya Hawke e Ayo Edebiri',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Elio',
@@ -123,7 +208,7 @@ const pixar_filmesr = [
     tag: 'Ficção',
     diretor: 'Adrian Molina',
     atores_principais: 'Yonas Kibreab, Zoe Saldaña e Brad Garrett',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Toy Story 5',
@@ -131,14 +216,24 @@ const pixar_filmesr = [
     tag: 'Animação',
     diretor: 'Andrew Stanton',
     atores_principais: 'Tom Hanks, Tim Allen e Joan Cusack',
-    image: ''
+    image: fundoFita
+  },
+  {
+    nome: 'Hoppers',
+    sinopse: 'Uma jovem utiliza uma nova tecnologia para se comunicar com animais.',
+    tag: 'Animação',
+    diretor: 'Daniel Chong',
+    atores_principais: 'Piper Curda, Jon Hamm e Bobby Moynihan',
+    image: fundoFita
   }
 ];
 
 
+// ==========================================================
 // MARVEL STUDIOS
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const marvel_filmesp = [
   {
     nome: 'Homem de Ferro',
@@ -146,23 +241,63 @@ const marvel_filmesp = [
     tag: 'Super-herói',
     diretor: 'Jon Favreau',
     atores_principais: 'Robert Downey Jr., Gwyneth Paltrow e Jeff Bridges',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Os Vingadores',
-    sinopse: 'Heróis da Marvel se unem para impedir uma ameaça que pode destruir a Terra.',
+    sinopse: 'Os maiores heróis da Terra se unem para enfrentar uma ameaça alienígena.',
     tag: 'Super-herói',
     diretor: 'Joss Whedon',
     atores_principais: 'Robert Downey Jr., Chris Evans e Scarlett Johansson',
-    image: ''
+    image: fundoFita
+  },
+  {
+    nome: 'Capitão América: O Primeiro Vingador',
+    sinopse: 'Steve Rogers se torna um supersoldado e enfrenta as forças da Hydra.',
+    tag: 'Ação',
+    diretor: 'Joe Johnston',
+    atores_principais: 'Chris Evans, Hugo Weaving e Hayley Atwell',
+    image: fundoFita
+  },
+  {
+    nome: 'Thor',
+    sinopse: 'Thor é banido de Asgard e precisa aprender o significado de ser um herói.',
+    tag: 'Fantasia',
+    diretor: 'Kenneth Branagh',
+    atores_principais: 'Chris Hemsworth, Natalie Portman e Tom Hiddleston',
+    image: fundoFita
+  },
+  {
+    nome: 'Guardiões da Galáxia',
+    sinopse: 'Um grupo de heróis improváveis se une para proteger a galáxia.',
+    tag: 'Aventura',
+    diretor: 'James Gunn',
+    atores_principais: 'Chris Pratt, Zoe Saldaña e Dave Bautista',
+    image: fundoFita
   },
   {
     nome: 'Pantera Negra',
-    sinopse: 'T’Challa precisa proteger Wakanda e defender seu povo de uma nova ameaça.',
+    sinopse: 'T’Challa precisa proteger Wakanda enquanto enfrenta um poderoso inimigo.',
     tag: 'Super-herói',
     diretor: 'Ryan Coogler',
     atores_principais: 'Chadwick Boseman, Michael B. Jordan e Lupita Nyong’o',
-    image: ''
+    image: fundoFita
+  },
+  {
+    nome: 'Homem-Aranha: De Volta ao Lar',
+    sinopse: 'Peter Parker tenta equilibrar sua vida escolar com sua responsabilidade de herói.',
+    tag: 'Super-herói',
+    diretor: 'Jon Watts',
+    atores_principais: 'Tom Holland, Michael Keaton e Zendaya',
+    image: fundoFita
+  },
+  {
+    nome: 'Doutor Estranho',
+    sinopse: 'Um cirurgião descobre as artes místicas após perder a capacidade de operar.',
+    tag: 'Fantasia',
+    diretor: 'Scott Derrickson',
+    atores_principais: 'Benedict Cumberbatch, Chiwetel Ejiofor e Rachel McAdams',
+    image: fundoFita
   },
   {
     nome: 'Vingadores: Ultimato',
@@ -170,7 +305,7 @@ const marvel_filmesp = [
     tag: 'Super-herói',
     diretor: 'Anthony e Joe Russo',
     atores_principais: 'Robert Downey Jr., Chris Evans e Mark Ruffalo',
-    image: ''
+    image: fundoFita
   }
 ];
 
@@ -182,7 +317,7 @@ const marvel_filmesr = [
     tag: 'Super-herói',
     diretor: 'Shawn Levy',
     atores_principais: 'Ryan Reynolds, Hugh Jackman e Emma Corrin',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Capitão América: Admirável Mundo Novo',
@@ -190,7 +325,7 @@ const marvel_filmesr = [
     tag: 'Super-herói',
     diretor: 'Julius Onah',
     atores_principais: 'Anthony Mackie, Harrison Ford e Danny Ramirez',
-    image: ''
+    image: fundoFita
   },
   {
     nome: 'Thunderbolts*',
@@ -199,17 +334,27 @@ const marvel_filmesr = [
     diretor: 'Jake Schreier',
     atores_principais: 'Florence Pugh, Sebastian Stan e David Harbour',
     image: ''
+  },
+  {
+    nome: 'Quarteto Fantástico: Primeiros Passos',
+    sinopse: 'Uma equipe de heróis precisa proteger seu mundo de uma ameaça cósmica.',
+    tag: 'Super-herói',
+    diretor: 'Matt Shakman',
+    atores_principais: 'Pedro Pascal, Vanessa Kirby e Joseph Quinn',
+    image: ''
   }
 ];
 
 
+// ==========================================================
 // UNIVERSAL PICTURES
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const universal_filmesp = [
   {
     nome: 'Jurassic Park',
-    sinopse: 'Um parque com dinossauros recriados geneticamente perde o controle de suas criaturas.',
+    sinopse: 'Um parque com dinossauros geneticamente recriados perde o controle das criaturas.',
     tag: 'Aventura',
     diretor: 'Steven Spielberg',
     atores_principais: 'Sam Neill, Laura Dern e Jeff Goldblum',
@@ -217,7 +362,7 @@ const universal_filmesp = [
   },
   {
     nome: 'Tubarão',
-    sinopse: 'Um enorme tubarão ameaça uma cidade costeira e provoca uma caçada perigosa.',
+    sinopse: 'Um enorme tubarão ameaça uma cidade costeira e provoca uma perigosa caçada.',
     tag: 'Suspense',
     diretor: 'Steven Spielberg',
     atores_principais: 'Roy Scheider, Robert Shaw e Richard Dreyfuss',
@@ -238,6 +383,46 @@ const universal_filmesp = [
     diretor: 'Pierre Coffin e Chris Renaud',
     atores_principais: 'Steve Carell, Jason Segel e Russell Brand',
     image: ''
+  },
+  {
+    nome: 'E.T. O Extraterrestre',
+    sinopse: 'Um garoto faz amizade com um alienígena perdido e tenta ajudá-lo a voltar para casa.',
+    tag: 'Ficção',
+    diretor: 'Steven Spielberg',
+    atores_principais: 'Henry Thomas, Drew Barrymore e Dee Wallace',
+    image: ''
+  },
+  {
+    nome: 'A Múmia',
+    sinopse: 'Exploradores despertam uma antiga criatura egípcia e precisam impedir sua destruição.',
+    tag: 'Aventura',
+    diretor: 'Stephen Sommers',
+    atores_principais: 'Brendan Fraser, Rachel Weisz e Arnold Vosloo',
+    image: ''
+  },
+  {
+    nome: 'King Kong',
+    sinopse: 'Uma equipe encontra um gigantesco gorila em uma ilha misteriosa.',
+    tag: 'Aventura',
+    diretor: 'Peter Jackson',
+    atores_principais: 'Naomi Watts, Jack Black e Adrien Brody',
+    image: ''
+  },
+  {
+    nome: 'O Grinch',
+    sinopse: 'Uma criatura que odeia o Natal decide roubar a celebração de uma pequena cidade.',
+    tag: 'Comédia',
+    diretor: 'Ron Howard',
+    atores_principais: 'Jim Carrey, Taylor Momsen e Jeffrey Tambor',
+    image: ''
+  },
+  {
+    nome: 'Velozes e Furiosos',
+    sinopse: 'Um policial se infiltra em um grupo de corredores envolvidos em crimes.',
+    tag: 'Ação',
+    diretor: 'Rob Cohen',
+    atores_principais: 'Vin Diesel, Paul Walker e Michelle Rodriguez',
+    image: ''
   }
 ];
 
@@ -245,7 +430,7 @@ const universal_filmesp = [
 const universal_filmesr = [
   {
     nome: 'Jurassic World: Recomeço',
-    sinopse: 'Uma equipe viaja para uma ilha perigosa em busca de material genético de dinossauros.',
+    sinopse: 'Uma equipe viaja para uma ilha perigosa em busca de material genético.',
     tag: 'Aventura',
     diretor: 'Gareth Edwards',
     atores_principais: 'Scarlett Johansson, Mahershala Ali e Jonathan Bailey',
@@ -278,13 +463,15 @@ const universal_filmesr = [
 ];
 
 
+// ==========================================================
 // PARAMOUNT PICTURES
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const paramount_filmesp = [
   {
     nome: 'O Poderoso Chefão',
-    sinopse: 'Uma família mafiosa luta para manter seu poder e controlar seus negócios.',
+    sinopse: 'Uma poderosa família mafiosa luta para manter seu controle sobre seus negócios.',
     tag: 'Crime',
     diretor: 'Francis Ford Coppola',
     atores_principais: 'Marlon Brando, Al Pacino e James Caan',
@@ -292,7 +479,7 @@ const paramount_filmesp = [
   },
   {
     nome: 'Forrest Gump',
-    sinopse: 'Um homem simples vive acontecimentos importantes da história dos Estados Unidos.',
+    sinopse: 'Um homem simples participa de acontecimentos importantes da história americana.',
     tag: 'Drama',
     diretor: 'Robert Zemeckis',
     atores_principais: 'Tom Hanks, Robin Wright e Gary Sinise',
@@ -300,7 +487,7 @@ const paramount_filmesp = [
   },
   {
     nome: 'Transformers',
-    sinopse: 'Robôs alienígenas chegam à Terra e entram em uma guerra que envolve humanos.',
+    sinopse: 'Robôs alienígenas chegam à Terra e iniciam uma guerra que envolve humanos.',
     tag: 'Ação',
     diretor: 'Michael Bay',
     atores_principais: 'Shia LaBeouf, Megan Fox e Josh Duhamel',
@@ -308,10 +495,50 @@ const paramount_filmesp = [
   },
   {
     nome: 'Missão: Impossível',
-    sinopse: 'Um agente secreto realiza missões perigosas para impedir ameaças internacionais.',
+    sinopse: 'Um agente secreto recebe missões extremamente perigosas para proteger seu país.',
     tag: 'Ação',
     diretor: 'Brian De Palma',
     atores_principais: 'Tom Cruise, Jon Voight e Emmanuelle Béart',
+    image: ''
+  },
+  {
+    nome: 'Titanic',
+    sinopse: 'Um jovem casal se apaixona durante a viagem inaugural do famoso Titanic.',
+    tag: 'Romance',
+    diretor: 'James Cameron',
+    atores_principais: 'Leonardo DiCaprio, Kate Winslet e Billy Zane',
+    image: ''
+  },
+  {
+    nome: 'Top Gun',
+    sinopse: 'Um piloto talentoso enfrenta desafios durante seu treinamento de aviação.',
+    tag: 'Ação',
+    diretor: 'Tony Scott',
+    atores_principais: 'Tom Cruise, Kelly McGillis e Val Kilmer',
+    image: ''
+  },
+  {
+    nome: 'Um Lugar Silencioso',
+    sinopse: 'Uma família precisa sobreviver em um mundo onde criaturas atacam qualquer som.',
+    tag: 'Terror',
+    diretor: 'John Krasinski',
+    atores_principais: 'Emily Blunt, John Krasinski e Millicent Simmonds',
+    image: ''
+  },
+  {
+    nome: 'Sonic: O Filme',
+    sinopse: 'Sonic precisa fugir de autoridades e encontra um aliado inesperado na Terra.',
+    tag: 'Aventura',
+    diretor: 'Jeff Fowler',
+    atores_principais: 'Ben Schwartz, Jim Carrey e James Marsden',
+    image: ''
+  },
+  {
+    nome: 'O Show de Truman',
+    sinopse: 'Um homem descobre que sua vida inteira está sendo transmitida pela televisão.',
+    tag: 'Drama',
+    diretor: 'Peter Weir',
+    atores_principais: 'Jim Carrey, Laura Linney e Ed Harris',
     image: ''
   }
 ];
@@ -341,17 +568,27 @@ const paramount_filmesr = [
     diretor: 'Josh Cooley',
     atores_principais: 'Chris Hemsworth, Brian Tyree Henry e Scarlett Johansson',
     image: ''
+  },
+  {
+    nome: 'Missão: Impossível - O Acerto Final',
+    sinopse: 'Ethan Hunt enfrenta uma nova ameaça que pode colocar o mundo inteiro em perigo.',
+    tag: 'Ação',
+    diretor: 'Christopher McQuarrie',
+    atores_principais: 'Tom Cruise, Hayley Atwell e Ving Rhames',
+    image: ''
   }
 ];
 
 
+// ==========================================================
 // SONY PICTURES
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const sony_filmesp = [
   {
     nome: 'Homem-Aranha',
-    sinopse: 'Peter Parker ganha poderes e precisa aprender a utilizá-los para combater o crime.',
+    sinopse: 'Peter Parker ganha poderes e precisa aprender a usá-los para combater o crime.',
     tag: 'Super-herói',
     diretor: 'Sam Raimi',
     atores_principais: 'Tobey Maguire, Kirsten Dunst e Willem Dafoe',
@@ -375,10 +612,50 @@ const sony_filmesp = [
   },
   {
     nome: 'Karate Kid',
-    sinopse: 'Um jovem aprende artes marciais com um mestre e enfrenta seus próprios desafios.',
+    sinopse: 'Um jovem aprende artes marciais com um mestre e enfrenta seus maiores desafios.',
     tag: 'Drama',
     diretor: 'John G. Avildsen',
     atores_principais: 'Ralph Macchio, Pat Morita e Elisabeth Shue',
+    image: ''
+  },
+  {
+    nome: 'Resident Evil',
+    sinopse: 'Uma equipe tenta impedir que um vírus mortal transforme pessoas em criaturas perigosas.',
+    tag: 'Terror',
+    diretor: 'Paul W. S. Anderson',
+    atores_principais: 'Milla Jovovich, Michelle Rodriguez e Eric Mabius',
+    image: ''
+  },
+  {
+    nome: 'O Espetacular Homem-Aranha',
+    sinopse: 'Peter Parker descobre novos segredos sobre seus poderes e sua família.',
+    tag: 'Super-herói',
+    diretor: 'Marc Webb',
+    atores_principais: 'Andrew Garfield, Emma Stone e Rhys Ifans',
+    image: ''
+  },
+  {
+    nome: '007: Cassino Royale',
+    sinopse: 'James Bond enfrenta um perigoso banqueiro durante uma missão internacional.',
+    tag: 'Ação',
+    diretor: 'Martin Campbell',
+    atores_principais: 'Daniel Craig, Eva Green e Mads Mikkelsen',
+    image: ''
+  },
+  {
+    nome: 'Bad Boys',
+    sinopse: 'Dois policiais precisam proteger uma testemunha enquanto investigam criminosos.',
+    tag: 'Ação',
+    diretor: 'Michael Bay',
+    atores_principais: 'Will Smith, Martin Lawrence e Téa Leoni',
+    image: ''
+  },
+  {
+    nome: 'Anjos da Noite',
+    sinopse: 'Uma guerreira vampira descobre uma conspiração envolvendo vampiros e lobisomens.',
+    tag: 'Fantasia',
+    diretor: 'Len Wiseman',
+    atores_principais: 'Kate Beckinsale, Scott Speedman e Michael Sheen',
     image: ''
   }
 ];
@@ -408,17 +685,27 @@ const sony_filmesr = [
     diretor: 'J. C. Chandor',
     atores_principais: 'Aaron Taylor-Johnson, Ariana DeBose e Fred Hechinger',
     image: ''
+  },
+  {
+    nome: 'Karate Kid: Lendas',
+    sinopse: 'Um jovem aprende artes marciais com dois mestres enquanto enfrenta novos desafios.',
+    tag: 'Ação',
+    diretor: 'Jonathan Entwistle',
+    atores_principais: 'Ben Wang, Jackie Chan e Ralph Macchio',
+    image: ''
   }
 ];
 
 
+// ==========================================================
 // WARNER BROS.
+// ==========================================================
 
-// filmes principais do estúdio
+// filmes principais do estudio
 const warner_filmesp = [
   {
     nome: 'Harry Potter e a Pedra Filosofal',
-    sinopse: 'Um garoto descobre que é bruxo e começa seus estudos em Hogwarts.',
+    sinopse: 'Harry descobre que é bruxo e começa seus estudos na escola de magia Hogwarts.',
     tag: 'Fantasia',
     diretor: 'Chris Columbus',
     atores_principais: 'Daniel Radcliffe, Emma Watson e Rupert Grint',
@@ -442,10 +729,50 @@ const warner_filmesp = [
   },
   {
     nome: 'Matrix',
-    sinopse: 'Um programador descobre que a realidade em que vive é uma enorme simulação.',
+    sinopse: 'Um programador descobre que a realidade em que vive é uma grande simulação.',
     tag: 'Ficção',
     diretor: 'Lana Wachowski e Lilly Wachowski',
     atores_principais: 'Keanu Reeves, Laurence Fishburne e Carrie-Anne Moss',
+    image: ''
+  },
+  {
+    nome: 'O Exorcista',
+    sinopse: 'Uma garota começa a apresentar comportamentos assustadores e sua família busca ajuda.',
+    tag: 'Terror',
+    diretor: 'William Friedkin',
+    atores_principais: 'Ellen Burstyn, Linda Blair e Max von Sydow',
+    image: ''
+  },
+  {
+    nome: 'A Fantástica Fábrica de Chocolate',
+    sinopse: 'Um garoto ganha a oportunidade de visitar uma misteriosa fábrica de chocolates.',
+    tag: 'Fantasia',
+    diretor: 'Tim Burton',
+    atores_principais: 'Johnny Depp, Freddie Highmore e Helena Bonham Carter',
+    image: ''
+  },
+  {
+    nome: 'It: A Coisa',
+    sinopse: 'Um grupo de crianças enfrenta uma criatura que assume a forma de seus maiores medos.',
+    tag: 'Terror',
+    diretor: 'Andy Muschietti',
+    atores_principais: 'Bill Skarsgård, Jaeden Martell e Finn Wolfhard',
+    image: ''
+  },
+  {
+    nome: 'Mad Max: Estrada da Fúria',
+    sinopse: 'Em um mundo pós-apocalíptico, Max se une a Furiosa para escapar de um tirano.',
+    tag: 'Ação',
+    diretor: 'George Miller',
+    atores_principais: 'Tom Hardy, Charlize Theron e Nicholas Hoult',
+    image: ''
+  },
+  {
+    nome: 'Duna',
+    sinopse: 'Paul Atreides viaja para um planeta desértico e se envolve em uma disputa pelo poder.',
+    tag: 'Ficção',
+    diretor: 'Denis Villeneuve',
+    atores_principais: 'Timothée Chalamet, Zendaya e Rebecca Ferguson',
     image: ''
   }
 ];
@@ -462,7 +789,7 @@ const warner_filmesr = [
   },
   {
     nome: 'Os Fantasmas Ainda se Divertem',
-    sinopse: 'A família Deetz retorna à sua antiga casa e acaba envolvendo-se novamente com Beetlejuice.',
+    sinopse: 'A família Deetz retorna à sua antiga casa e encontra novamente o excêntrico Beetlejuice.',
     tag: 'Fantasia',
     diretor: 'Tim Burton',
     atores_principais: 'Michael Keaton, Winona Ryder e Jenna Ortega',
@@ -475,35 +802,58 @@ const warner_filmesr = [
     diretor: 'James Gunn',
     atores_principais: 'David Corenswet, Rachel Brosnahan e Nicholas Hoult',
     image: ''
+  },
+  {
+    nome: 'Minecraft: O Filme',
+    sinopse: 'Um grupo de personagens é transportado para o mundo de Minecraft e precisa sobreviver.',
+    tag: 'Aventura',
+    diretor: 'Jared Hess',
+    atores_principais: 'Jack Black, Jason Momoa e Emma Myers',
+    image: ''
   }
 ];
 
 function Filmes() {
   return (
-    <section>
 
-    <div className="py-20 bg-emerald-100 m-20 rounded-2xl">
+      <>
+    <div className="relative w-full h-100 overflow-hidden">
+      <img
+        src={fundoFita}
+        alt="Fundo da página de filmes"
+        className="w-full h-full object-cover border-5 border-[#4A2C20] drop-shadow-lg"
+      />
+      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
+          Filmes
+        </h1>
+      </div>
+    </div>
+
+    <section id="filmes" className=" bg-[#E6D5B8] py-20 ">
+
+    <div className="rounded-2xl">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Veterinários</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Nossos profissionais especialisados para os cuidados de seu filhote
-          </h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Disney</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {vets.map((vet) => (
-            <article key={vet.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={vet.image} alt={vet.name} className="h-100 w-full object-cover" />
+          {disney_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden border-5 border-[#4A2C20] bg-[#E0CAA4] shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-140 w-full object-cover" />
               <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{vet.specialty}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{vet.name}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">Cidade: {vet.city}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">Telefone: {vet.phone}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">Email: {vet.email}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">Experiência: {vet.experience}</p>
-                <p className="mt-2  text-sm leading-7 text-slate-600">Disponível: {vet.availability}</p>
+                <div className="flex items-center gap-2">
+                <GoStarFill size={40} className=" flex mb-3 text-[#E5A93C]" />
+                <h3 className="ml-1 mb-3 text-xl font-semibold text-[#C2593F]">{filmep.nome}</h3>
+                </div>
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <a className="mt-2 rounded-full bg-[#A82C24] px-6 py-3 font-semibold text-white transition hover:[#C93D34]" href="/formulario">Alugue aqui</a>
               </div>
             </article>
           ))}
@@ -511,25 +861,26 @@ function Filmes() {
     </div>
     </div>
 
-    <div className="py-20 bg-emerald-100 m-20 rounded-2xl">
+    <div className="mt-10 rounded-2xl">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700">Remédios</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Nossos rémedios para os cuidados e melhoras dos seus animais  
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
           </h2>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {products.map((product) => (
-            <article key={product.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={product.image} alt={product.name} className="h-48 w-full object-cover" />
+          {disney_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
               <div className="p-6">
                 <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{product.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{product.name}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{product.description}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Peça aqui</button>
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
               </div>
             </article>
         
@@ -537,7 +888,333 @@ function Filmes() {
           </div>
           </div>
         </div>
+        
+        <div className="py-20  rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Pixar</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {pixar_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+    </div>
+
+    <div className="py-20 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {pixar_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+              <div className="p-6">
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+        
+          ))}
+          </div>
+          </div>
+        </div>
+
+        <div className="py-20  rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Marvel</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {marvel_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+    </div>
+
+    <div className="py-20 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {marvel_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+              <div className="p-6">
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+        
+          ))}
+          </div>
+          </div>
+        </div>
+        
+        <div className="py-20  rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Universal</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {universal_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+    </div>
+
+    <div className="py-20 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {universal_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+              <div className="p-6">
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+        
+          ))}
+          </div>
+          </div>
+        </div>
+
+        <div className="py-20  rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Paramount</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {paramount_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+    </div>
+
+    <div className="py-20 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {paramount_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+              <div className="p-6">
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+        
+          ))}
+          </div>
+          </div>
+        </div>
+
+        <div className="py-20  rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Sony</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {sony_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+    </div>
+
+    <div className="py-20 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {sony_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+              <div className="p-6">
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+        
+          ))}
+          </div>
+          </div>
+        </div>
+
+        <div className="py-20  rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Warner</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {warner_filmesp.map((filmep) => (
+            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+    </div>
+
+    <div className="py-20 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Filmes lançados recentemente
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {warner_filmesr.map((filmesr) => (
+            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+              <div className="p-6">
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
+                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
+                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+              </div>
+            </article>
+        
+          ))}
+          </div>
+          </div>
+        </div>
+        
     </section>
+    </>
   )
 }
 
