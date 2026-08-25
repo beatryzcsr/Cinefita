@@ -4,6 +4,41 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FiAlertCircle, FiCheckCircle, FiSend,} from "react-icons/fi";
 import { z } from "zod";
 
+const styles = {
+  pageContainer: "min-h-screen bg-slate-100 px-4 py-8 text-slate-900",
+  card: "mx-auto max-w-4xl rounded-xl bg-white p-6 shadow-lg sm:p-8",
+  header: "mb-8 border-b border-slate-200 pb-5",
+  headerLeft: "flex items-start gap-4",
+  iconBadge: "mt-1 h-3 w-3 shrink-0 rounded-full bg-emerald-500",
+  titleRow: "flex items-center gap-2",
+  title: "text-2xl font-bold tracking-tight sm:text-3xl",
+  subtitle: "mt-2 text-sm text-slate-600",
+  form: "space-y-8",
+  grid: "grid gap-5 sm:grid-cols-2",
+  fieldGroup: "space-y-2",
+  labelRow: "flex items-baseline justify-between gap-3",
+  label: "text-sm font-semibold text-slate-800",
+  required: "text-red-600",
+  ruleHint: "text-xs text-slate-500",
+  input: "w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200",
+  inputError: "border-red-500 focus:border-red-500 focus:ring-red-200",
+  errorText: "flex items-center gap-1 text-xs text-red-600",
+  radioGroup: "flex gap-5 pt-2",
+  radioLabel: "flex items-center gap-2 text-sm text-slate-700",
+  radioInput: "accent-emerald-600",
+  checkboxGroup: "space-y-3 sm:col-span-2",
+  checkboxLabel: "flex items-start gap-2 text-sm text-slate-700",
+  checkboxInput: "mt-0.5 accent-emerald-600",
+  checkboxSubLabel: "text-slate-600",
+  footer: "flex flex-col gap-4 border-t border-slate-200 pt-5 sm:flex-row sm:items-center sm:justify-between",
+  footerInfo: "text-sm text-slate-600",
+  successBadge: "flex items-center gap-2 font-medium text-emerald-700",
+  footerButtons: "flex justify-end gap-3",
+  btnJson: "rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50",
+  btnSubmit: "inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60",
+  spinner: "h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent",
+};
+
 export const formSchema = z
   .object({
     // Texto com limite de caracteres
@@ -77,14 +112,11 @@ export const formSchema = z
 
 export const ZodShowcaseForm = () => {
   const [validatedPayload, setValidatedPayload] = useState(null);
-  const [showJsonModal, setShowJsonModal] = useState(false);
-  const [copied, setCopied] = useState(false);
+  
 
   const {
     register,
     handleSubmit,
-    reset,
-    setValue,
     formState: { errors, isSubmitting },
   } = useForm({
     resolver: zodResolver(formSchema),
@@ -170,10 +202,10 @@ export const ZodShowcaseForm = () => {
               <input
                 type="text"
                 placeholder="Ex: Rei leão"
-                {...register("fullName")}
+                {...register("filmeName")}
                 className={`${styles.input} ${errors.filmeName ? styles.inputError : ""}`}
               />
-              {errors.fullName && (
+              {errors.filmeName && (
                 <p className={styles.errorText}>
                   <FiAlertCircle /> {errors.filmeName.message}
                 </p>
@@ -186,7 +218,6 @@ export const ZodShowcaseForm = () => {
                 <label className={styles.label}>
                   E-mail Corporativo <span className={styles.required}>*</span>
                 </label>
-                <span className={styles.ruleHint}>z.string().email()</span>
               </div>
               <input
                 type="email"
@@ -207,7 +238,6 @@ export const ZodShowcaseForm = () => {
                 <label className={styles.label}>
                   Telefone / WhatsApp <span className={styles.required}>*</span>
                 </label>
-                <span className={styles.ruleHint}>z.regex()</span>
               </div>
               <input
                 type="text"
@@ -229,7 +259,6 @@ export const ZodShowcaseForm = () => {
                 <label className={styles.label}>
                   Data de Nascimento <span className={styles.required}>*</span>
                 </label>
-                <span className={styles.ruleHint}>.refine(passado)</span>
               </div>
               <input
                 type="date"
@@ -249,7 +278,6 @@ export const ZodShowcaseForm = () => {
                 <label className={styles.label}>
                   Modalidade <span className={styles.required}>*</span>
                 </label>
-                <span className={styles.ruleHint}>Radio Group</span>
               </div>
               <div className={styles.radioGroup}>
                 {[
@@ -280,7 +308,6 @@ export const ZodShowcaseForm = () => {
                 <label className={styles.label}>
                   Senha <span className={styles.required}>*</span>
                 </label>
-                <span className={styles.ruleHint}>A-Z, 0-9, #!$</span>
               </div>
               <input
                 type="password"
@@ -301,7 +328,6 @@ export const ZodShowcaseForm = () => {
                 <label className={styles.label}>
                   Confirmar Senha <span className={styles.required}>*</span>
                 </label>
-                <span className={styles.ruleHint}>.refine(match)</span>
               </div>
               <input
                 type="password"
@@ -361,15 +387,6 @@ export const ZodShowcaseForm = () => {
             </div>
 
             <div className={styles.footerButtons}>
-              {validatedPayload && (
-                <button
-                  type="button"
-                  onClick={() => setShowJsonModal(true)}
-                  className={styles.btnJson}
-                >
-                </button>
-              )}
-
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -398,4 +415,3 @@ export const ZodShowcaseForm = () => {
 
 
 export default ZodShowcaseForm;
-
