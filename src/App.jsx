@@ -6,11 +6,12 @@ import Sobre from "./pages/Sobre"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Form from "./pages/Form"
-import Produtos from "./pages/Filmes"
+import Filmes from "./pages/Filmes"
 
 export default function App() {
   return (
     <BrowserRouter>
+
       <div className="flex min-h-screen flex-col">
         <Header />
         <div className="flex flex-1 flex-col">
@@ -23,8 +24,6 @@ export default function App() {
             <Route path="*" element={<Erro />} />
           </Routes>
         </div>
-        <Footer />
-      </div>
     </BrowserRouter>
   );
 }
