@@ -52,7 +52,7 @@ export default function Contato () {
   <div className="flex w-full flex-col items-center justify-center gap-5 px-5 py-8 text-center sm:px-8 md:w-190 md:py-0">
    <h2 className="text-xl font-bold tracking-widest sm:text-2xl">QUER REALIZAR UMA COMPRA?</h2>
     <p className="text-sm">Preencha nosso formulário para escolher seu produto.</p>
-    <Link to="/formulario" className="rounded-lg bg-[#A82C24] px-6 py-3 font-bold text-[#E6D5B8] transition-colors hover:bg-[#85231d]">
+    <Link to="/locacao" className="rounded-lg bg-[#A82C24] px-6 py-3 font-bold text-[#E6D5B8] transition-colors hover:bg-[#85231d]">
       Ir para o formulário
     </Link>
    </div>
