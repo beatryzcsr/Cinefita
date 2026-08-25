@@ -2,6 +2,7 @@ import fundoFita from '../assets/fundofita.png'
 import { GoStarFill } from "react-icons/go";
 import { AiFillMedicineBox } from "react-icons/ai";
 import { SiAnimalplanet } from "react-icons/si";
+import { FaClapperboard } from "react-icons/fa6";
 
 // ==========================================================
 // DISNEY
@@ -836,8 +837,8 @@ function Filmes() {
     <div className="rounded-2xl">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Disney</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C2593F] ">Disney</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#A82C24] sm:text-4xl">Filmes Principais</h2>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -849,11 +850,11 @@ function Filmes() {
                 <GoStarFill size={40} className=" flex mb-3 text-[#E5A93C]" />
                 <h3 className="ml-1 mb-3 text-xl font-semibold text-[#C2593F]">{filmep.nome}</h3>
                 </div>
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <a className="mt-2 rounded-full bg-[#A82C24] px-6 py-3 font-semibold text-white transition hover:[#C93D34]" href="/formulario">Alugue aqui</a>
+                <p className="text-sm font-semibold text-[#606C38]">{filmep.tag}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-900">Sinopse: {filmep.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-900">Diretor: {filmep.diretor}</p>
+                <p className="mt-2 mb-8 text-sm leading-7 text-slate-900">Atores Principais: {filmep.atores_principais}</p>
+                <a className="mt-2 rounded-full bg-[#A82C24] px-6 py-3 font-semibold text-white transition hover:[#E64A40]" href="/locacao">Alugue aqui</a>
               </div>
             </article>
           ))}
@@ -864,23 +865,25 @@ function Filmes() {
     <div className="mt-10 rounded-2xl">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#A82C24] sm:text-4xl">
             Filmes lançados recentemente
           </h2>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {disney_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
+            <article key={filmesr.nome} className="overflow-hidden border-5 border-[#4A2C20] bg-[#E0CAA4] shadow-sm">
+              <img src={filmesr.image} alt={filmesr.nome} className="h-140 w-full object-cover" />
               <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
+                <div className="flex items-center gap-2">
+                <FaClapperboard size={30} className=" flex mb-3 text-[#E5A93C]" />
+                <h3 className="ml-1 mb-3 text-xl font-semibold text-[#C2593F]">{filmesr.nome}</h3>
+                </div>
+                <p className="text-sm font-semibold text-[#606C38]">{filmesr.tag}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-900">Sinopse: {filmesr.sinopse}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-900">Diretor: {filmesr.diretor}</p>
+                <p className="mt-2 mb-8 text-sm leading-7 text-slate-900">Atores Principais: {filmesr.atores_principais}</p>
+                <a className="mt-2 rounded-full bg-[#A82C24] px-6 py-3 font-semibold text-white transition hover:[#E64A40]" href="/locacao">Alugue aqui</a>
               </div>
             </article>
         
@@ -889,330 +892,7 @@ function Filmes() {
           </div>
         </div>
         
-        <div className="py-20  rounded-2xl">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Pixar</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {pixar_filmesp.map((filmep) => (
-            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-    </div>
-    </div>
-
-    <div className="py-20 m-20 rounded-2xl">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Filmes lançados recentemente
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {pixar_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
-              <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-        
-          ))}
-          </div>
-          </div>
-        </div>
-
-        <div className="py-20  rounded-2xl">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Marvel</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {marvel_filmesp.map((filmep) => (
-            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-    </div>
-    </div>
-
-    <div className="py-20 m-20 rounded-2xl">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Filmes lançados recentemente
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {marvel_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
-              <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-        
-          ))}
-          </div>
-          </div>
-        </div>
-        
-        <div className="py-20  rounded-2xl">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Universal</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {universal_filmesp.map((filmep) => (
-            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-    </div>
-    </div>
-
-    <div className="py-20 m-20 rounded-2xl">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Filmes lançados recentemente
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {universal_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
-              <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-        
-          ))}
-          </div>
-          </div>
-        </div>
-
-        <div className="py-20  rounded-2xl">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Paramount</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {paramount_filmesp.map((filmep) => (
-            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-    </div>
-    </div>
-
-    <div className="py-20 m-20 rounded-2xl">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Filmes lançados recentemente
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {paramount_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
-              <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-        
-          ))}
-          </div>
-          </div>
-        </div>
-
-        <div className="py-20  rounded-2xl">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Sony</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {sony_filmesp.map((filmep) => (
-            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-    </div>
-    </div>
-
-    <div className="py-20 m-20 rounded-2xl">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Filmes lançados recentemente
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {sony_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
-              <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-        
-          ))}
-          </div>
-          </div>
-        </div>
-
-        <div className="py-20  rounded-2xl">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Warner</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">Filmes Principais</h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {warner_filmesp.map((filmep) => (
-            <article key={filmep.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-              <img src={filmep.image} alt={filmep.nome} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmep.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmep.nome}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmep.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmep.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-    </div>
-    </div>
-
-    <div className="py-20 m-20 rounded-2xl">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Filmes lançados recentemente
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {warner_filmesr.map((filmesr) => (
-            <article key={filmesr.nome} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={filmesr.image} alt={filmesr.nome} className="h-48 w-full object-cover" />
-              <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
-                <p className="text-sm font-semibold text-emerald-700">{filmesr.tag}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{filmesr.nome}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{filmesr.sinopse}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{filmesr.diretor}</p>
-                <p className="mt-2 mb-4 text-sm leading-7 text-slate-600">{filmesr.atores_principais}</p>
-                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Alugue aqui</button>
-              </div>
-            </article>
-        
-          ))}
-          </div>
-          </div>
-        </div>
-        
+          
     </section>
     </>
   )
