@@ -3,10 +3,11 @@ import Contato from "./pages/Contato"
 import Erro from "./pages/Erro"
 import Home from "./pages/Home"
 import Sobre from "./pages/Sobre"
-import Produtos from "./pages/Filmes"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Form from "./pages/Form"
+import Filmes from "./pages/Filmes"
+
 
 
 export default function App() {
