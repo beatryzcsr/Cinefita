@@ -5,6 +5,7 @@ const links = [
 	{ to: "/sobre", label: "Sobre" },
 	{ to: "/locacao", label: "Locação" },
 	{ to: "/contato", label: "Contato" },
+    { to: "/filmes", label: "Filmes"}
 ];
 
 export default function Header() {
@@ -26,10 +27,11 @@ export default function Header() {
 						</NavLink>
 					))}
 				</nav>
-				<NavLink className="rounded-full bg-[#a92f2b] px-5 py-2 font-serif text-sm font-bold text-[#e6d5b8] transition-colors hover:bg-[#862321] sm:px-7 sm:text-base" to="/login">
+				<NavLink className="rounded-full bg-[#a92f2b] transition delay-300 duration-150 ease-in-out px-5 py-2 font-serif text-sm font-bold text-[#e5a93c] transition-colors hover: -translate-y-1 hover:scale-110 hover:bg-[#862321] sm:px-7 sm:text-base">
 					Login
 				</NavLink>
 			</div>
 		</header>
 	);
 }
+
