@@ -12,7 +12,6 @@ export default function App() {
   return (
     <BrowserRouter>
 
-      <div className="flex min-h-screen flex-col">
         <Header />
         <div className="flex flex-1 flex-col">
           <Routes>
