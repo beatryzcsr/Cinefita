@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 import Sobre from "./pages/Sobre"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import Form from "./components/Form"
+import Form from "./pages/Form"
 
 
 export default function App() {
