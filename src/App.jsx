@@ -11,16 +11,20 @@ import Produtos from "./pages/Filmes"
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/produtos" element={<Produtos />} />
-        <Route path="/formulario" element={<Form />} />
-        <Route path="/contato" element={<Contato />} />
-        <Route path="/" element={<Home />} />
-        <Route path='/sobre' element={<Sobre />} />
-        <Route path="*" element={<Erro />} />
-      </Routes>
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <div className="flex flex-1 flex-col">
+          <Routes>
+            <Route path="/produtos" element={<Produtos />} />
+            <Route path="/formulario" element={<Form />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/" element={<Home />} />
+            <Route path='/sobre' element={<Sobre />} />
+            <Route path="*" element={<Erro />} />
+          </Routes>
+        </div>
         <Footer />
+      </div>
     </BrowserRouter>
   );
 }
