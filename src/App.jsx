@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 import Form from "./pages/Form"
 import Filmes from "./pages/Filmes"
 
+//rotas
 export default function App() {
   return (
     <BrowserRouter>
